@@ -1,20 +1,31 @@
 package gr.aueb.cf.ch1;
 
 /**
- * Προσθετοι δυο ακεραιους
- * και εμφανιζει το αποτελεσμα
- * στο stout.
+ * Adds two integers.
+ * @author Petros pc
  */
 public class AddApp {
     public static void main(String[] args) {
-        //Δηλωση και αρχικοποιηση μεταβλητων
+
         int num1 = 10;
         int num2 = 7;
         int result = 0;
-        //Εντολες
+
         result = num1 + num2;
-        //Εκτυπωση αποτελεσματων
-        System.out.println("Το αποτελεσμα των " + num1 + ", " + num2 + " ειναι =" + result);
-        System.out.printf("Το αποτελεσμα των %d , %d ειναι %d" , num1, num2, result);
+
+        System.out.println("the result of: " + num1 + ", " + num2 + " is =" + result);
+        System.out.printf("the result of %d , %d is %d" , num1, num2, result);
+    }
+
+    /**
+     * Adds two ints
+     * @param a     the first int
+     * @param b     the second int
+     * @return      the sum of a, b
+     *
+     */
+    public static int add(int a, int b) {
+
+        return a + b;
     }
 }
